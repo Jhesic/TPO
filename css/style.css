@@ -1,0 +1,535 @@
+/*--------------------------------------Variables-------------------------------------------------*/
+:root{
+    /*paleta de colores*/
+    --blue: #00001b;
+    --lightblue: #63b0ce;;
+    --pastel: #FECEAB;
+    --lightpink: #FF847C;
+    --pink: #ff489f;
+
+    /*tamaño de fuente*/
+    --size-font: 1.1em;
+    --size-titulos: 2em;
+
+}
+
+/*----------------------------------------Body----------------------------------------------------------*/
+body {
+    margin: auto;
+    width: 80%;
+    position: relative;
+    background-color: var(--lightblue);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/*----------------------------------------Contenedor----------------------------------------------------------*/
+.container {
+    background-color: var(--blue);
+    color: var(--pastel);
+    padding: 1em;
+}
+
+header {
+    position: relative;
+    display: flex;
+    padding: 2em; 
+    width: 100%;
+    justify-content: center;
+
+
+
+}
+
+.logo{
+    width: auto;
+    
+    
+    margin-right: 0.5em;
+    border: 0.2em solid var(--pastel);
+    border-radius: 1em;
+}
+
+.logo-2{
+    width: 4.5em;    
+    margin-right: 0.5em;
+    border: 0.2em solid var(--pastel);
+    border-radius: 1em;
+    grid-area: linea1;
+}
+
+nav {
+    padding: 0px;
+    background-color: var(--lightblue);
+    color:var(--blue);
+    margin: 0px;
+    text-align: center;
+}
+
+h1 a{
+    border:none;
+}
+
+
+nav a{
+    border: 0.2em solid var(--pastel);   
+}
+a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;  
+    
+}
+
+a:link, a:visited{
+    
+    color: var(--blue);
+    
+}
+a:hover, a:active{
+    color: var(--pastel);
+    background-color: var(--blue);
+    padding: 0.1em;
+}
+
+
+main {
+    position: relative;
+    top: -2em;
+    margin: 1em;
+    padding: 0.5em;
+    font-size: var(--size-font);
+  }
+
+section {
+    color: var(--blue);    
+    background-color: var(--lightblue); 
+    border-radius:1em;
+    border: 1px solid var(--pastel);
+            
+}
+
+
+h2 {
+    font-size: var(--size-titulos);
+    text-align: center;
+    text-transform: capitalize;
+    margin:0.5em;
+    padding: 1em;
+    text-decoration: underline;
+}
+
+#banner{
+    position:relative;
+    margin: 1.5em 25%;
+    width: 50%;    
+    }
+
+#iframe{
+    position:relative;
+    margin: auto;
+    padding: 2em 0;
+    width: 100%;
+
+}
+
+iframe{
+    width: 100%;
+    border: 5px solid var(--lightpink);
+}
+
+/* -------------------------------------Servicios------------------------------------------------*/
+
+#servicios{
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+}
+.section-group-1{
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+    border: 0.12em solid var(--lightpink);
+    box-shadow: 0 0 0.5em;
+    
+    
+}
+
+.section-group-1 figure{
+    position: relative;
+    top: 3em;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.section-group-1:hover{
+    transform: scale(1.1);
+    gap: 0.5em;
+    opacity: 0.9;
+    
+}
+
+.img-services{
+    position: relative;
+    margin: auto;
+    padding: 0.1em;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: 1px solid var(--lightpink);
+    box-shadow: 0 0 0.5em;
+    bottom: 0.5em;
+}
+
+.section-group-2{
+    margin: 1em auto;
+    padding: 2em;
+    width: 75%;
+    height: 100%;
+    
+}
+
+.section-group-2:hover{
+    transform: scale(1.1);
+    gap: 1em;
+}
+
+figcaption{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.title-services{
+    border: none;
+}
+.title-services:link, .title-services:visited{
+    width: 100%;
+    color: var(--blue);
+    margin: auto;    
+}   
+
+.title-services:hover{
+    color: var(--lightpink);
+    background-color: var(--blue)
+}   
+
+
+.volver{
+    position: relative;
+    margin-left: 90%;
+    text-align: right; 
+}
+
+.volver:link,  .volver:visited{
+    color: var(--lightpink);
+    background-color: var(--blue);
+
+}
+
+
+/*------------------------------------- Footer -------------------------------------------*/
+footer {
+    width: 100%;
+}
+.redes-sociales{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 20em);
+    grid-template-rows: repeat(1, 10em 10em);
+    column-gap: 1em;
+    row-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    padding: 1em 10em;
+    height: auto;   
+    
+    
+}
+
+.titulo-redes{
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: var(--lightblue);
+    color: var(--blue);
+}
+
+.redes-sociales a:link, .redes-sociales a:visited,
+.redes-sociales a:hover, .redes-sociales a:active {
+    position: relative;
+    top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--pastel);
+    background-color: black;
+    padding: 1em;
+    border: 0.2em solid var(--pastel);
+
+}
+
+/*-----------------------------------Formulario----------------------------------------------------------*/
+.formulario{
+    width:50%;
+    margin: auto;
+    max-width: 100%;
+    padding: 3em;
+    border: 1px solid rgb(224, 132, 132);
+    box-shadow: 0 0 0.5em;
+    position: relative;
+    color: antiquewhite;
+}
+.formulario_input, .formulario_label, .formulario_submit{
+    display: block;
+    width: 75%;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 1.3em;
+}
+
+.formulario_input{
+    padding: 1em;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(102, 92, 92, 0.5);
+    
+
+}
+.formulario_label{
+    padding-left: 3.5em;
+    position: absolute;
+    margin-top: -6.5em;
+    
+    text-align: left;
+    left: 5%;
+
+    
+}
+
+.formulario_submit{
+    background-color:rgb(44, 151, 165);
+    color:white;
+    padding: 0.9em;
+}
+.formulario_submit:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 133, 133);
+    
+    
+}
+/*-----------------------------------Medias queries-----------------------------------------------------*/
+
+@media all and (min-width: 200px) and (max-width: 600px){
+    header{
+        display: grid;
+        width: 75%;
+        margin: 0 auto; 
+    }
+
+    .logo{
+        position: relative;
+        left: 15%;
+    }    
+    nav a{
+        display: block;
+        margin: 0 auto;
+        padding: auto;
+    }
+
+    nav a:link, nav a:visited{
+        color: var(--pink);
+        padding: 1em;
+        background-color: var(--blue);
+    }
+
+    nav a:hover, nav a:active{
+        color: var(--pink);
+        background-color:black;
+        padding: 1em;
+    }
+    h2{ 
+        font-size:large;
+        text-align:left;
+        margin-left: -5%;
+    }
+
+    #banner{
+        width: 100%;
+        margin: 0.5em auto;
+    }
+
+    .redes-sociales{
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        
+        
+    }
+
+    .redes-sociales a:link, .redes-sociales a:visited,
+    .redes-sociales a:hover, .redes-sociales a:active {
+        position: relative;
+        right: 1.3em;
+        padding: 50%;
+    }
+
+    h2{
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #servicios{
+        display: block;
+        position: relative;
+        width: 75%;    
+        margin: auto;
+        left: -10%;
+        margin-bottom: -25%;
+    }
+
+
+    .section-group-1{
+        padding-bottom: 15%;
+        width: 100%;
+        margin: 1em auto
+        
+    }
+
+    .volver:link, .volver:visited{
+        margin-left: 0em;
+        position: relative;
+        top:1em;
+        background-color: var(--blue);
+    }
+
+    .formulario{
+        width: 90%;
+        max-width: 100%;
+        margin: auto;
+        padding: 10%;
+        font-size: small;
+    }
+    .formulario_input, .formulario_label, .formulario_submit{
+        position: relative;
+        margin: 0.5em;
+        padding: 0.7em 0em;
+        left: -10%;
+        
+    }
+    .formulario_input{
+        width: 100%;
+
+    }
+    .formulario_label{
+        top: -5em;
+        
+        
+    }
+}
+
+
+@media all and (min-width: 600px) and (max-width:992px) {
+    body {
+        background-color: black;
+        width: 100%;
+        padding:1em;
+    }
+    
+    nav{
+        padding:auto;
+        margin:auto;
+        background-color: var(--blue);
+        
+    }
+    nav a{
+        color: var(--pink);
+        margin: 0 auto;
+        padding: 1em;
+    }
+    nav a:visited{
+        color: var(--pink);
+        
+        padding: auto;
+    }
+
+    .logo{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    #banner{
+        width: 75%;
+        margin: 0.5em auto;
+    }
+
+    
+    }
+    .redes-sociales{
+        position: relative;
+        left: 15%;
+        display: grid;
+        width: 75%;
+        margin: 0 auto;
+        grid-template-columns: repeat(5, 10%);
+        grid-template-rows: repeat(1, 2em 2em);
+        column-gap: 1em;
+        row-gap: 1em;
+        justify-items: center;
+        align-items: center;
+        padding: 1em;
+        height: auto;   
+    }
+
+
+@media all and (min-width: 992px) and (min-width: 1024px){
+    .redes-sociales{
+        margin: 0 auto;
+    }
+    .redes-sociales a:link, .redes-sociales a:visited,
+    .redes-sociales a:hover, .redes-sociales a:active {
+    position: relative;
+    top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--pastel);
+    background-color: black;
+    padding: 50%;
+    border: 0.2em solid var(--pastel);
+    }
+
+    nav{
+        padding:auto;
+        margin:auto;
+        background-color: var(--blue);
+        
+    }
+    nav a{
+        color: var(--pink);
+        margin: 0 auto;
+        padding: 1em;
+    }
+    nav a:link, nav a:visited{
+        color: var(--pink);
+        
+        padding: 1em;
+    }
+
+    nav a:hover, nav a:active{
+        color: var(--pink);
+        background-color:black;
+        padding: 1em;
+    }
+    .logo{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+}
+
+

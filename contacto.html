@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e87e5e3186.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .correcto{
+            color: green;
+            background-color: rgb(192, 255, 206);
+            border: 0.15em solid green;
+        }
+
+        .incorrecto{
+            color: red;
+            background-color: pink;
+            border: 0.15em solid red;
+
+        }
+
+    </style>
+    <title>LucielSec-Contacto</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><a href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a></h1>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="quienes_somos.html">¿Quienes somos?</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <main class="main">
+            <h2>Contactenos</h2>
+            <form action="" id="form">
+                <input type="text" class="formulario_input correcto" id="nombre" name="nombre"><label for="nombre" class="formulario_label">Nombre Completo</label>
+                <input type="email" class="formulario_input correcto" id="correo" name="correo"><label for="correo" class="formulario_label">Correo</label>
+                <input type="number" class="formulario_input correcto" id="telefono" name="telefono"><label for="telefono" class="formulario_label">Teléfono</label>
+                <input type="text" class="formulario_input correcto" id="msj" name="msj"><label for="msj" class="formulario_label">Mensaje</label>
+                <input type="submit" class="formulario_submit" id="boton" value="Enviar" click="rosa()">
+            </form>
+        </main>
+        <footer>
+            <p class="titulo-redes">Redes Sociales</p>
+            <div class="redes-sociales">
+                <a href="https://wa.me/######?text=¡Estoy+interesado!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:luciel.sec@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a>
+                <a href="https://z-p15.www.instagram.com/lucielsec/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                
+            </div>
+            <cite> &#169 Luciel SEC - 2022</cite>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        const nombreCompletoForm = document.getElementById('nombre');
+        const correoForm = document.getElementById('correo');
+        const telefonoForm = document.getElementById('telefono');
+        const msjForm = document.getElementById('msj');
+        const botonForm = document.getElementById('boton');
+        const form = document.getElementById('form');
+        
+        
+        function validar() {
+            e.preventDefault();
+            //nombre
+            if (nombreCompletoForm.value === "") {
+                nombreCompletoForm.classList.remove('correcto');
+                nombreCompletoForm.classList.add('incorrecto');
+                nombreCompletoForm.focus();
+                return false;
+            }
+            else{
+                nombreCompletoForm.classList.remove('incorrecto');
+                nombreCompletoForm.classList.add('correcto');
+                return true;
+            }
+
+            //correo
+            if (correoForm.value=== "") {
+                correoForm.classList.remove('correcto');
+                correoForm.classList.add('incorrecto');
+                correoForm.focus();
+                return false;
+            }
+            else{
+                correoForm.classList.remove('incorrecto');
+                correoForm.classList.add('correcto');
+                return true;
+            }
+
+            //telefono
+            if (telefonoForm.value === "") {
+                telefonoForm.classList.remove('correcto');
+                telefonoForm.classList.add('incorrecto');
+                telefonoForm.focus();
+                return false;
+            }
+            else{
+                telefonoForm.classList.remove('incorrecto');
+                telefonoForm.classList.add('correcto');
+                return true;
+            }
+
+            //msj
+            if (msjForm.value === "") {
+                msjForm.classList.remove('correcto');
+                msjForm.classList.add('incorrecto');
+                msjForm.focus();
+                return false;
+            }
+            else{
+                msjForm.classList.remove('incorrecto');
+                msjForm.classList.add('correcto');
+                return true;
+            }
+            
+        }
+
+        
+    </script>
+</body>
+</html>
